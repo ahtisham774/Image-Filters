@@ -78,7 +78,7 @@ const ImagePreview = () => {
                 isActive ? 
             <>
             <div className='rgb'>
-                <Range name='radius' value={radius} min={0} max={200} css='filter wid' range={'rgb_width'} handleChange={setRadius} />
+                <Range name='radius' value={radius} min={0} max={300} css='filter wid' range={'rgb_width'} handleChange={setRadius} />
                 <Range name={state.n} range='rgb_width' css='blue wid'  min={state.min} max={state.max} step={state.step} value={value} handleChange={setValue} />
             </div>
             <div className='filters'>
@@ -97,7 +97,7 @@ const ImagePreview = () => {
             :
             <div className='range_filters'>
                 <div className='range_preview'>
-                     <Range css='filter width' range={'range_width'} name='radius' min={0} max={200} value={radius} handleChange={setRadius} /> 
+                     <Range css='filter width' range={'range_width'} name='radius' min={0} max={300} value={radius} handleChange={setRadius} /> 
                      <Range css='blue width'   range={'range_width'} name='brightness' step={0.1} min={0} max={5} value={br} handleChange={setBr} />   
                      <Range css='blue width'   range={'range_width'} name='contrast' min={0} step={0.1} max={5} value={con} handleChange={setCon} />   
                      <Range css='blue width'   range={'range_width'} name='sepia' min={0} max={100} value={sep} handleChange={setSep} />   
