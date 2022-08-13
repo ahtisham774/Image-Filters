@@ -71,7 +71,7 @@ const ImagePreview = () => {
         </div>
         <div className='preview'>
             <div className="image_preview">
-                 <img draggable='true' src={url} style={{borderRadius:`${radius}%`,filter:isActive ? filter ==='default'? 'none':`${filter}(${value}${sign})`: `brightness(${br}) grayscale(${gr}%) sepia(${sep}%) saturate(${sat}) hue-rotate(${hue}deg) invert(${inv}%) opacity(${op}%) contrast(${con}) blur(${blur}px)`}} alt="" />
+                 <img draggable='true' src={url} style={{borderRadius:`${radius}px`,filter:isActive ? filter ==='default'? 'none':`${filter}(${value}${sign})`: `brightness(${br}) grayscale(${gr}%) sepia(${sep}%) saturate(${sat}) hue-rotate(${hue}deg) invert(${inv}%) opacity(${op}%) contrast(${con}) blur(${blur}px)`}} alt="" />
                  
             </div>
             {
